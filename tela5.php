@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="tema/css/main.css">
     <link rel="stylesheet" href="tema/css/themes.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/tela5.js"></script>
     <script src="tema/js/vendor/modernizr-3.3.1.min.js"></script>
     <title>DISITE - Um Produto DOM</title>
 </head>
@@ -27,7 +28,7 @@
         <div class="container">
             <h2 class="site-heading h3 site-block">
                 <div class="col-md-10">
-                    <i class="fa fa-fw fa-chevron-right"></i> <strong>Passo 1 - Precisamos de Algumas Informações...</strong>
+                    <i class="fa fa-fw fa-chevron-right"></i> <strong>Passo 5 - Cadastrando seus produtos / serviços...</strong>
                 </div>
                 <div class="col-md-2">
                     <a href="http://dom.com.vc/"><img src="public/img/disite_logo.png" width="125px"></a>
@@ -36,6 +37,6 @@
         </div>
     </section>
     <div class="col-lg-2"></div>
-    <?php include_once 'back-end/view/tela1.html';?>
+    <?php include_once 'back-end/view/tela5.php';?>
 </body>
 </html>

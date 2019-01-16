@@ -1,0 +1,45 @@
+.selectModelos{
+  font-size:18px;
+}
+
+.botaoModelos{
+  background-color:#fff;
+  border-radius: 4px;
+  width:20%;
+  height: 40px;
+  float:right;
+}
+
+.botaoModelos:hover{
+  transition:0.3s;
+  background-color:#d3d3d3;
+  color:#fff;
+}
+
+.escolha {
+  width: 100%;
+  text-align: center;
+  margin-top:2%;
+}
+
+.titulo{
+  font-size:18px;
+  color:#fff;
+}
+
+.titulo:hover{
+  transition: 0.5s;
+  text-decoration:none;
+  font-size:18px;
+  color:black;
+}
+
+.modelos{
+    width:100%;
+    background-color:#fff;
+    overflow:hidden;
+    height:100%px;
+    max-height:40%;
+    border:1px solid #ccc;
+    overflow-y: auto;
+}
