@@ -25,7 +25,7 @@ $(function () {
 function pegaId(objeto){
 
     var id = objeto.id;
-    document.getElementById('modeloEscolhido').innerHTML = id;
+    document.getElementById('slideEscolhido').innerHTML = id;
     document.getElementById('escolha').value = id;
 
 }

@@ -11,13 +11,17 @@
     <link rel="stylesheet" href="public/css/style.css">
 	<script src="tema/js/vendor/modernizr-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link rel="stylesheet" href="public/iframe/modelos/css/normalize.css">
-	<link rel="stylesheet" href="public/iframe/modelos/css/layout.css">
-	<link rel="stylesheet" href="public/iframe/modelos/css/meuestilo.css">
-	<script src="public/iframe/modelos/js/modelos.js"></script>
+	<link rel="stylesheet" href="public/css/normalize.css">
+	<link rel="stylesheet" href="public/css/layout.css">
+	<link rel="stylesheet" href="public/css/meuestilo.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="public/iframe/modelos/js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="public/js/jquery.mixitup.min.js"></script>
 	<script src="public/js/modelos.js"></script>
+	<?php
+		include 'back-end/config/QueryConfig.php';
+		include 'back-end/controller/tela1Controller.php';
+		include 'back-end/controller/modelosController.php';
+	?>
 </head>
 <body>
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop paddingAll">
@@ -30,18 +34,12 @@
         <li><span class="filter" data-filter=".med">Clínicas Médicas / Odonto</span></li>
     </ul>
     <div id="portfoliolist">
-		<?php
-			include 'public/iframe/modelos/back-end/core/database/Conexao.php';
-			include 'public/iframe/modelos/back-end/core/database/QueryBuilder.php';
-			$pdo = Conexao::conectar();
-			$query = new QueryBuilder($pdo);
-			$resultado = $query->selectAll('dados');
-		?><div class="modelos"><?php
+		<div class="modelos"><?php
 			foreach($resultado as $modelo):?>
                 <div class="portfolio <?=$modelo->categoria?>" data-cat="<?=$modelo->categoria?>">
-                <a id="<?=$modelo->titulo?>" onclick="pegaId(this);">
+                <a id="<?=$modelo->titulo?>" onclick="pegaId(this);escolhe();">
 					<div class="portfolio-wrapper">
-						<img src="public/iframe/modelos/img/portfolios/app/<?=$modelo->titulo?>.jpg" alt="" />
+						<img src="public/img/modelos/<?=$modelo->titulo?>" alt="" />
 						<div class="label">
 							<div class="label-text">
 							    <b><?=$modelo->titulo?></b>
@@ -55,7 +53,9 @@
 		</div>
 			<div class="escolha">
 				<form action="tela3.php" method="post">
-					<div class="col-md-8">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<input type="hidden" name="modeloEscolhido" value="" id="escolha">
 						<label id="modeloEscolhido" class="selectModelos">Escolha</label>
 					</div>
 					<div class="col-md-4">

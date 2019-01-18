@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="public/css/style.css">
 	<script src="tema/js/vendor/modernizr-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link rel="stylesheet" href="public/iframe/modelos/css/normalize.css">
-	<link rel="stylesheet" href="public/iframe/modelos/css/layout.css">
-	<link rel="stylesheet" href="public/iframe/modelos/css/meuestilo.css">
-	<script src="public/iframe/modelos/js/modelos.js"></script>
+	<link rel="stylesheet" href="public/css/normalize.css">
+	<link rel="stylesheet" href="public/css/layout.css">
+	<link rel="stylesheet" href="public/css/meuestilo.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="public/iframe/modelos/js/jquery.mixitup.min.js"></script>
-	<script src="public/js/modelos.js"></script>
+	<script type="text/javascript" src="public/js/jquery.mixitup.min.js"></script>
+	<script src="public/js/slides.js"></script>
+	<?php
+		include 'back-end/controller/sliderController.php';			
+	?>
 </head>
 <body>
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop paddingAll">
@@ -29,7 +31,7 @@
         <li><span class="filter" data-filter=".con">Contabilidade</span></li>
         <li><span class="filter" data-filter=".med">Clínicas Médicas / Odonto</span></li>
 	</ul>
-	<form action="tela4.php" method="post">
+	<form action="tela5.php" method="post">
 		<div class="col-md-6 marginVertical">
 			<label for="slogan">Slogan / Título:</label>
 			<input type="text" name="slogan" class="form-control " placeholder="Digite um slogan/título para seu slider...">
@@ -40,22 +42,16 @@
 		</div>
 		<div class="col-md-5"></div>
     <div id="portfoliolist">
-		<?php
-			include 'public/iframe/slider/back-end/core/database/Conexao.php';
-			include 'public/iframe/slider/back-end/core/database/QueryBuilder.php';
-			$pdo = Conexao::conectar();
-			$query = new QueryBuilder($pdo);
-			$resultado = $query->selectAll('dados');
-		?><div class="modelos"><?php
-			foreach($resultado as $modelo):?>
-                <div class="portfolio <?=$modelo->categoria?>" data-cat="<?=$modelo->categoria?>">
-                <a id="<?=$modelo->titulo?>" onclick="pegaId(this);">
+		<div class="modelos"><?php
+			foreach($resultado as $slide):?>
+                <div class="portfolio <?=$slide->categoria?>" data-cat="<?=$slide->categoria?>">
+                <a id="<?=$slide->titulo?>" onclick="pegaId(this);escolhe();">
 					<div class="portfolio-wrapper">
-						<img src="public/iframe/slider/img/portfolios/slider/<?=$modelo->titulo?>.jpg" alt="" />
+						<img src="public/img/slides/<?=$slide->titulo?>" alt="" />
 						<div class="label">
 							<div class="label-text">
-							    <b><?=$modelo->titulo?></b>
-								<span class="text-category"><?=$modelo->categoria?></span>
+							    <b><?=$slide->titulo?></b>
+								<span class="text-category"><?=$slide->categoria?></span>
 							</div>
                         <div class="label-bg"></div>
                     </div>
@@ -65,10 +61,10 @@
 		</div>
 			<div class="escolha">
 				<div class="col-md-4">
-					<input type="button" onclick="alert('Trabalho em progresso... Favor escolher um dos modelos!')" href="clienteUpload.php" class="btn jaPossuo marginBottom" value="Já possuo imagens">
+					<input type="button" onclick="alert('Trabalho em progresso... Favor escolher um dos slides!')" href="clienteUpload.php" class="btn jaPossuo marginBottom" value="Já possuo imagens">
 				</div>
 				<div class="col-md-4">
-					<label id="modeloEscolhido" class="selectModelos">Escolha</label>
+					<label id="slideEscolhido" class="selectSlides">Escolha</label>
 				</div>
 				<div class="col-md-4">
 					<input type="submit" class="form-control botaoProximo" value="Próximo">

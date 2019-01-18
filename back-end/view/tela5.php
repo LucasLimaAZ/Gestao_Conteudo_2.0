@@ -25,17 +25,21 @@
             <div class="col-md-6">
                 <label class="col-md-4 paddingTop7">Envie fotos: </label>
                 <label class="logo col-md-8"> <img src="public/img/upload.png" style="icon">
-                <input type="file" id="fotos" size="60" multiple>
+                <input type="file" id="fotos" onchange="addImagem();" size="60" multiple>
                 </label>
                 <input type="file" class="logo">
+                <span class="help-block">Envie todas de uma só vez.</span>
+                <p class="IMGsucesso" id="mostraImagens"></p>
             </div>
         </div>
         <div class="col-md-6 paddingTop2">
             <div class="col-md-4"></div>
             <button type="button" class="btn btn-success col-md-2" onclick="addDescricao();addProdutos();" value="+"><i class="fa fa-fw fa-plus-circle"></i></button>
             <button type="button" class="btn btn-danger col-md-2" onclick="removeDescricao();removeProdutos();" value="-"><i class="fa fa-fw fa-minus-circle"></i></button>
+            <a class="interrogacao" onclick="alert('Preencha os campos desejados e clique no botão +.');"><i class="fa fa-fw fa-question-circle"></i></a>
         </div>
         <div class="col-md-6">
+            <input type="submit" class="form-control botaoProximo" value="Próximo">
         </div>
     </form>
 </section>

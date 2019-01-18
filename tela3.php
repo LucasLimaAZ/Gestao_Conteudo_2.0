@@ -36,6 +36,10 @@
         </div>
     </section>
     <div class="col-lg-2"></div>
-    <?php include_once 'back-end/view/tela3.php';?>
+    <?php
+        include 'back-end/config/QueryConfig.php';
+        include 'back-end/controller/tela2Controller.php';
+        include_once 'back-end/view/tela3.php';    
+    ?>
 </body>
 </html>

@@ -41,7 +41,7 @@
             <textarea class="form-control" rows="5" name="sobre" placeholder="Conte-nos sobre a sua empresa..."></textarea>
         </div>
         <div class="col-md-6 paddingTop2">  
-            <textarea class="form-control" rows="5" name="sobre" placeholder="Informações importantes..."></textarea>
+            <textarea class="form-control" rows="5" name="informacoes" placeholder="Informações importantes..."></textarea>
         </div>
         <div class="col-md-6">
             <label class="col-md-4 paddingTop7">Envie fotos: </label>

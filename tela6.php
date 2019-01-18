@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="tema/css/main.css">
     <link rel="stylesheet" href="tema/css/themes.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/tela6.js"></script>
     <script src="tema/js/vendor/modernizr-3.3.1.min.js"></script>
     <title>DISITE - Um Produto DOM</title>
 </head>
@@ -27,7 +28,7 @@
         <div class="container">
             <h2 class="site-heading h3 site-block">
                 <div class="col-md-10">
-                    <i class="fa fa-fw fa-chevron-right"></i> <strong>Passo 4 - Monte seu slider...</strong>
+                    <i class="fa fa-fw fa-chevron-right"></i> <strong>Passo 6 - Informações de Contato...</strong>
                 </div>
                 <div class="col-md-2">
                     <a href="http://dom.com.vc/"><img src="public/img/disite_logo.png" width="125px"></a>
@@ -36,10 +37,6 @@
         </div>
     </section>
     <div class="col-lg-2"></div>
-    <?php
-    include 'back-end/config/QueryConfig.php';
-    include 'back-end/controller/tela3Controller.php';
-    include_once 'back-end/view/tela4.php';
-    ?>
+    <?php include_once 'back-end/view/tela6.php';?>
 </body>
 </html>
