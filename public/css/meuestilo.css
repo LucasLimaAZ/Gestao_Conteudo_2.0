@@ -39,7 +39,7 @@
     background-color:#fff;
     overflow:hidden;
     height:100%px;
-    max-height:40%;
+    max-height:450px;
     border:1px solid #ccc;
     overflow-y: auto;
 }

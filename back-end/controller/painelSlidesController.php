@@ -6,7 +6,6 @@ include '../config/QueryConfig.php';
 
 $titulo = $_POST["titulo"];
 $categoria = $_POST["categoria"];
-$link = $_POST["link"];
 $imagem = $_FILES['imagem'];
 $imagem_name = $titulo;
 $path = $_FILES['imagem']['name'];
@@ -14,15 +13,10 @@ $local_imagem = "../../public/img/slides/";
 $extensao = pathinfo($path, PATHINFO_EXTENSION);
 $upload = move_uploaded_file($_FILES['imagem']['tmp_name'],$local_imagem.$imagem_name.'.'.$extensao);
 
-echo "$path";
-echo "$local_imagem";
-echo "$imagem_name";
-echo "$extensao";
-
 if($upload){
     echo 'SUCESSO!';
 }else{
     echo 'ERRO!';
 }
 
-$query->insertIntoSlides($titulo,$categoria,$link);
+$query->insertIntoSlides($titulo,$categoria);

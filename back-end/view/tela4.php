@@ -18,7 +18,11 @@
 	<script type="text/javascript" src="public/js/jquery.mixitup.min.js"></script>
 	<script src="public/js/slides.js"></script>
 	<?php
-		include 'back-end/controller/sliderController.php';			
+		include 'back-end/core/database/Conexao.php';
+		include 'back-end/core/database/QueryBuilder.php';
+		include 'back-end/config/QueryConfig.php';
+		include 'back-end/controller/sliderController.php';	
+		include 'back-end/controller/tela3Controller.php';		
 	?>
 </head>
 <body>

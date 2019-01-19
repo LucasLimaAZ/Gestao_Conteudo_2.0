@@ -18,6 +18,8 @@
 	<script type="text/javascript" src="public/js/jquery.mixitup.min.js"></script>
 	<script src="public/js/modelos.js"></script>
 	<?php
+		include 'back-end/core/database/Conexao.php';
+		include 'back-end/core/database/QueryBuilder.php';
 		include 'back-end/config/QueryConfig.php';
 		include 'back-end/controller/tela1Controller.php';
 		include 'back-end/controller/modelosController.php';

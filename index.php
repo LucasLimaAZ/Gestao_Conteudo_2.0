@@ -36,6 +36,6 @@
         </div>
     </section>
     <div class="col-lg-2"></div>
-    <?php include_once 'back-end/view/tela1.html';?>
+    <?php include_once 'back-end/view/tela1.php';?>
 </body>
 </html>

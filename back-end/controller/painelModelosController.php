@@ -14,11 +14,6 @@ $local_imagem = "../../public/img/modelos/";
 $extensao = pathinfo($path, PATHINFO_EXTENSION);
 $upload = move_uploaded_file($_FILES['imagem']['tmp_name'],$local_imagem.$imagem_name.'.'.$extensao);
 
-echo "$path";
-echo "$local_imagem";
-echo "$imagem_name";
-echo "$extensao";
-
 if($upload){
     echo 'SUCESSO!';
 }else{

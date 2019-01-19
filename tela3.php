@@ -37,6 +37,8 @@
     </section>
     <div class="col-lg-2"></div>
     <?php
+        include 'back-end/core/database/Conexao.php';
+        include 'back-end/core/database/QueryBuilder.php';
         include 'back-end/config/QueryConfig.php';
         include 'back-end/controller/tela2Controller.php';
         include_once 'back-end/view/tela3.php';    
