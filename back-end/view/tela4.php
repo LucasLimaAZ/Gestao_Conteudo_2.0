@@ -45,7 +45,7 @@
 			<input type="text" name="subslogan" class="form-control " placeholder="Digite um subtítulo para seu slider...">
 		</div>
 		<div class="col-md-5"></div>
-    <div id="portfoliolist">
+   		<div id="portfoliolist">
 		<div class="modelos"><?php
 			foreach($resultado as $slide):?>
                 <div class="portfolio <?=$slide->categoria?>" data-cat="<?=$slide->categoria?>">
@@ -68,6 +68,7 @@
 					<input type="button" onclick="alert('Trabalho em progresso... Favor escolher um dos slides!')" href="clienteUpload.php" class="btn jaPossuo marginBottom" value="Já possuo imagens">
 				</div>
 				<div class="col-md-4">
+					<input type="hidden" name="slider" value="" id="escolha">
 					<label id="slideEscolhido" class="selectSlides">Escolha</label>
 				</div>
 				<div class="col-md-4">

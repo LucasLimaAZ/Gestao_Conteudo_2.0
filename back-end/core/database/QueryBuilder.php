@@ -50,6 +50,18 @@ class QueryBuilder{
 
     }
 
+    public function updateTela4($table,$slogan,$subslogan,$slider,$id){
+
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $inserir = $this->pdo->prepare("UPDATE $table SET 
+        `slogan` = '$slogan',
+        `subslogan` = '$subslogan',
+        `slider` = '$tags'
+        WHERE `id` = $id");
+        $inserir->execute();
+
+    }
+
     public function selectAllModelos($table){
 
         $selecionaModelos = $this->pdo->prepare("select * from {$table}");
