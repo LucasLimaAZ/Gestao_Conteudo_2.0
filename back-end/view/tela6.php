@@ -1,5 +1,5 @@
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop marginBottom5 paddingAll">
-    <form action="tela7.php" method="post">
+    <form action="telaRevisao.php" method="post">
         <div class="col-md-12 site-heading h3 tituloProdutos">
             <i class="fa fa-fw fa-calendar"></i> <strong>Contato: </strong>
         </div>
@@ -23,18 +23,18 @@
         </div>
         <div class="col-md-4">
             <i class="fa fa-fw fa-envelope"></i>
-            <label for="email">Email para contato 1: </label>
-            <input type="email" class="form-control" placeholder="exemplo@email.com" name="email">
+            <label for="email1">Email para contato 1: </label>
+            <input type="email1" class="form-control" placeholder="exemplo@email.com" name="email1">
         </div>
         <div class="col-md-4">
             <i class="fa fa-fw fa-envelope"></i>
-            <label for="email">Email para contato 2: </label>
-            <input type="email" class="form-control" placeholder="opcional" name="email">
+            <label for="email2">Email para contato 2: </label>
+            <input type="email2" class="form-control" placeholder="opcional" name="email2">
         </div>
         <div class="col-md-4">
             <i class="fa fa-fw fa-envelope"></i>
-            <label for="email">Email para contato 3: </label>
-            <input type="email" class="form-control" placeholder="opcional" name="email">
+            <label for="email3">Email para contato 3: </label>
+            <input type="email3" class="form-control" placeholder="opcional" name="email3">
         </div>
         <div class="col-md-12">
             <div class="col-md-5">

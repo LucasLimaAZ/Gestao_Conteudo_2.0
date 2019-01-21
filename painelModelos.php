@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/css/stylePainel.css">
+    <link rel="stylesheet" href="public/css/meuestilo.css">
     <title>Painel de Cadastros DOM</title>
 </head>
 <body>
+<div class="painelModelos">
     <div class="container">  
         <form id="contact" action="back-end/controller/painelModelosController.php" method="post" enctype="multipart/form-data">
             <h3>PAINEL DISITE</h3>
@@ -39,5 +41,6 @@
                 </fieldset>
         </form>
     </div>
+</div>
 </body>
 </html>

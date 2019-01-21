@@ -39,6 +39,8 @@
             <a class="interrogacao" onclick="alert('Preencha os campos desejados e clique no botão +.');"><i class="fa fa-fw fa-question-circle"></i></a>
         </div>
         <div class="col-md-6">
+            <input type="hidden" name="produtos" id="produtos">
+            <input type="hidden" name="descricoes" id="descricoes">
             <input type="submit" class="form-control botaoProximo" value="Próximo">
         </div>
     </form>

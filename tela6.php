@@ -28,7 +28,7 @@
         <div class="container">
             <h2 class="site-heading h3 site-block">
                 <div class="col-md-10">
-                    <i class="fa fa-fw fa-chevron-right"></i> <strong>Passo 6 - Informações de Contato...</strong>
+                    <i class="fa fa-fw fa-chevron-right"></i> <strong>Passo Final - Informações de Contato...</strong>
                 </div>
                 <div class="col-md-2">
                     <a href="http://dom.com.vc/"><img src="public/img/disite_logo.png" width="125px"></a>
@@ -37,6 +37,12 @@
         </div>
     </section>
     <div class="col-lg-2"></div>
-    <?php include_once 'back-end/view/tela6.php';?>
+    <?php 
+    include 'back-end/core/database/Conexao.php';
+    include 'back-end/core/database/QueryBuilder.php';
+    include 'back-end/config/QueryConfig.php';
+    include 'back-end/controller/tela5Controller.php';
+    include_once 'back-end/view/tela6.php';
+    ?>
 </body>
 </html>

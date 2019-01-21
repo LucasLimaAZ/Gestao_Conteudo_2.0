@@ -8,13 +8,22 @@ class QueryBuilder{
 
     }    
 
-    public function selectAll($table,$model){
+    public function selectAll($table){
 
         $selecionaTodos = $this->pdo->prepare("SELECT * FROM {$table}");
         $selecionaTodos->execute();
-        return $selecionaTodos->fetchAll(PDO::FETCH_CLASS, "$model");
+        return $selecionaTodos->fetchAll(PDO::FETCH_CLASS);
 
     }
+
+    public function selectWhere($table,$id){
+
+        $selecionaTodos = $this->pdo->prepare("SELECT * FROM {$table} WHERE `id` = $id");
+        $selecionaTodos->execute();
+        return $selecionaTodos->fetchAll(PDO::FETCH_CLASS);
+
+    }
+
 
     public function insertInto($table,$campos,$values){
 
@@ -56,7 +65,39 @@ class QueryBuilder{
         $inserir = $this->pdo->prepare("UPDATE $table SET 
         `slogan` = '$slogan',
         `subslogan` = '$subslogan',
-        `slider` = '$tags'
+        `slider` = '$slider'
+        WHERE `id` = $id");
+        $inserir->execute();
+
+    }
+
+    public function updateTela5($table,$produtos,$descricoes,$id){
+
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $inserir = $this->pdo->prepare("UPDATE $table SET 
+        `produtos` = '$produtos',
+        `descricoes` = '$descricoes'
+        WHERE `id` = $id");
+        $inserir->execute();
+
+    }
+
+    public function updateTela6($table,$telefone,$email,$whatsapp,$email1,$email2,$email3,$facebook,$instagram,$twitter,$linkedin,$googleplus,$youtube,$id){
+
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $inserir = $this->pdo->prepare("UPDATE $table SET 
+        `telefone` = '$telefone',
+        `email` = '$email',
+        `whatsapp` = '$whatsapp',
+        `email1` = '$email1',
+        `email2` = '$email2',
+        `email3` = '$email3',
+        `facebook` = '$facebook',
+        `instagram` = '$instagram',
+        `twitter` = '$twitter',
+        `linkedin` = '$linkedin',
+        `googleplus` = '$googleplus',
+        `youtube` = '$youtube'
         WHERE `id` = $id");
         $inserir->execute();
 

@@ -142,3 +142,10 @@ fieldset {
   color: #888;
 }
 
+body{
+  background-image: url("../img/painelModelosBackground.jpg"); 
+  background-color: #cccccc; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}

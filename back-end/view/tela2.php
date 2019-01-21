@@ -44,7 +44,8 @@
 						<img src="public/img/modelos/<?=$modelo->titulo?>" alt="" />
 						<div class="label">
 							<div class="label-text">
-							    <b><?=$modelo->titulo?></b>
+							    <b><a href="<?=$modelo->link?>">VER<br></a></b>
+								<?=$modelo->titulo?>
 								<span class="text-category"><?=$modelo->categoria?></span>
 							</div>
                         <div class="label-bg"></div>
@@ -57,7 +58,7 @@
 				<form action="tela3.php" method="post">
 					<div class="col-md-4"></div>
 					<div class="col-md-4">
-						<input type="hidden" name="modeloEscolhido" value="" id="escolha">
+						<input hidden="hidden" name="modeloEscolhido" value="" id="escolha" required>
 						<label id="modeloEscolhido" class="selectModelos">Escolha</label>
 					</div>
 					<div class="col-md-4">

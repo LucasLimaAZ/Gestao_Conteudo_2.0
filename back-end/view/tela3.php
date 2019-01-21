@@ -1,12 +1,32 @@
+<script>
+    	function TeclaBloq(Campo,teclapres){
+var tecla = teclapres.keyCode;
+
+if (tecla == 39)
+
+{
+
+window.alert("não é permitido o caracter");
+
+Campo.focus();
+
+return false;
+
+}
+
+return tecla;
+
+}
+</script>
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop marginBottom5 paddingAll">
     <form action="tela4.php" method="post">
         <div class="col-md-6">
             <label for="titulo">Título: </label>
-            <input class="form-control" type="text" name="titulo">
+            <input class="form-control" type="text" name="titulo" >
         </div>
         <div class="col-md-6">
             <label for="subtitulo">Subtítulo: </label>
-            <input class="form-control" type="text" name="subtitulo">
+            <input class="form-control" type="text" name="subtitulo" >
         </div>
         <div class="col-md-6 paddingTop2">
             <label for="tags">Palavras Chave: </label>
@@ -38,10 +58,10 @@
         </div>
         <div class="col-md-12 paddingTop2"><span style="text-align:center;" class="help-block">Informações sobre o seu negócio...</span></div>
         <div class="col-md-6 paddingTop2">
-            <textarea class="form-control" rows="5" name="sobre" placeholder="Conte-nos sobre a sua empresa..."></textarea>
+            <textarea class="form-control" rows="5"  onkeyPress="return TeclaBloq(this,event);" name="sobre" placeholder="Conte-nos sobre a sua empresa..."></textarea>
         </div>
         <div class="col-md-6 paddingTop2">  
-            <textarea class="form-control" rows="5" name="informacoes" placeholder="Informações importantes..."></textarea>
+            <textarea class="form-control" rows="5"  onkeyPress="return TeclaBloq(this,event);" name="informacoes" placeholder="Informações importantes..."></textarea>
         </div>
         <div class="col-md-6">
             <label class="col-md-4 paddingTop7">Envie fotos: </label>
@@ -52,6 +72,6 @@
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-4 paddingTop2">
-            <input type="submit" value="Próximo" class="form-control botaoProximo">
+            <input type="submit" value="Próximo"  class="form-control botaoProximo">
         </div>
 </section>

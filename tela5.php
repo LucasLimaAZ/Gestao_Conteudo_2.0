@@ -41,6 +41,7 @@
     include 'back-end/core/database/Conexao.php';
     include 'back-end/core/database/QueryBuilder.php';
     include 'back-end/config/QueryConfig.php';
+    include 'back-end/controller/tela4Controller.php';
     include_once 'back-end/view/tela5.php';
     ?>
 </body>
