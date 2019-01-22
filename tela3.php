@@ -19,7 +19,9 @@
     <link rel="stylesheet" href="tema/css/main.css">
     <link rel="stylesheet" href="tema/css/themes.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/meuestilo.css">
     <script src="tema/js/vendor/modernizr-3.3.1.min.js"></script>
+    <script src="public/js/tela3.js"></script>
     <title>DISITE - Um Produto DOM</title>
 </head>
 <body>

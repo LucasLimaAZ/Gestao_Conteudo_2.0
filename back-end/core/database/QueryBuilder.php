@@ -103,6 +103,44 @@ class QueryBuilder{
 
     }
 
+    public function updateFinal($nome,$cpf,$necessidades,$modelo_escolhido,$titulo,$subtitulo,$tags,$descricao,$cor1,$cor2,$cor3,$sobre,$informacoes,$slogan,$subslogan,$produtos,$descricoes,$telefone,$email,$whatsapp,$email1,$email2,$email3,$facebook,$instagram,$twitter,$linkedin,$googleplus,$youtube,$id){
+
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $inserir = $this->pdo->prepare("UPDATE `conteudo` SET 
+        `nome` = '$nome',
+        `cpf` = '$cpf',
+        `necessidades` = '$necessidades',
+        `modelo_escolhido` = '$modelo_escolhido',
+        `titulo` = '$titulo',
+        `subtitulo` = '$subtitulo',
+        `tags` = '$tags',
+        `descricao` = '$descricao',
+        `cor1` = '$cor1',
+        `cor2` = '$cor2',
+        `cor3` = '$cor3',
+        `sobre` = '$sobre',
+        `informacoes` = '$informacoes',
+        `slogan` = '$slogan',
+        `subslogan` = '$subslogan',
+        `produtos` = '$produtos',
+        `descricoes` = '$descricoes',
+        `telefone` = '$telefone',
+        `email` = '$email',
+        `whatsapp` = '$whatsapp',
+        `email1` = '$email1',
+        `email2` = '$email2',
+        `email3` = '$email3',
+        `facebook` = '$facebook',
+        `instagram` = '$instagram',
+        `twitter` = '$twitter',
+        `linkedin` = '$linkedin',
+        `googleplus` = '$googleplus',
+        `youtube` = '$youtube'
+        WHERE `id` = $id");
+        $inserir->execute();
+
+    }
+
     public function selectAllModelos($table){
 
         $selecionaModelos = $this->pdo->prepare("select * from {$table}");
@@ -140,6 +178,14 @@ class QueryBuilder{
         $selecionaId = $this->pdo->prepare("SELECT * FROM `conteudo` ORDER BY `id` DESC LIMIT 1");
         $selecionaId->execute();
         return $selecionaId->fetchAll(PDO::FETCH_ASSOC);
+
+    }
+
+    public function pegaNome($id){
+
+        $selecionaNome = $this->pdo->prepare("SELECT `nome` FROM `conteudo` WHERE `id` = $id");
+        $selecionaNome->execute();
+        return $selecionaNome->fetchAll(PDO::FETCH_ASSOC);
 
     }
 

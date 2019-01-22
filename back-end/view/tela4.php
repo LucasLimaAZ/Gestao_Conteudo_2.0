@@ -38,11 +38,11 @@
 	<form action="tela5.php" method="post">
 		<div class="col-md-6 marginVertical">
 			<label for="slogan">Slogan / Título:</label>
-			<input type="text" name="slogan" class="form-control " placeholder="Digite um slogan/título para seu slider...">
+			<input type="text" name="slogan" class="form-control " placeholder="Digite um slogan/título para seu slider..." maxlength="200">
 		</div>
 		<div class="col-md-6 marginVertical">
 			<label for="subslogan">Subtítulo:</label>
-			<input type="text" name="subslogan" class="form-control " placeholder="Digite um subtítulo para seu slider...">
+			<input type="text" name="subslogan" class="form-control " placeholder="Digite um subtítulo para seu slider..." maxlength="200">
 		</div>
 		<div class="col-md-5"></div>
    		<div id="portfoliolist">

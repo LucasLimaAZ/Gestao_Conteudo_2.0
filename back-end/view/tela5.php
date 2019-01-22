@@ -2,10 +2,10 @@
     <div class="col-md-12 site-heading h3 tituloProdutos">
         <i class="fa fa-fw fa-shopping-cart"></i> <strong>Produtos / Serviços</strong>
     </div>
-    <form action="tela6.php" method="post">
+    <form action="tela6.php" method="post" enctype="multipart/form-data">
         <div class="col-md-12">
             <div class="col-md-6">
-                <input type="text" class="form-control" name="produto" id="produto" placeholder="Nome do seu produto / serviço">
+                <input type="text" class="form-control" maxlength="50" name="produto" id="produto" placeholder="Nome do seu produto / serviço">
             </div>
             <div class="col-md-6 mostraItens">
                 <label for="mostraProduto">Produto / Serviço: </label>
@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-12" style="margin-top:2%">
             <div class="col-md-6">
-                <textarea placeholder="Descreva seu produto..." id="descricao" name="descricao" class="form-control" rows="4" cols="50" maxlength="1000"></textarea>
+                <textarea placeholder="Descreva seu produto..." maxlength="200" id="descricao" name="descricao" class="form-control" rows="4" cols="50" maxlength="1000"></textarea>
             </div>
             <div class="col-md-6 paddingTop2 mostraItens">
                 <label for="mostraDescricao">Descrição: </label>
@@ -23,13 +23,12 @@
         </div>
         <div class="col-md-12" style="margin-top:2%">
             <div class="col-md-6">
-                <label class="col-md-4 paddingTop7">Envie fotos: </label>
+                <label class="col-md-4 paddingTop7">Envie fotos dos produtos: </label>
                 <label class="logo col-md-8"> <img src="public/img/upload.png" style="icon">
-                <input type="file" id="fotos" onchange="addImagem();" size="60" multiple>
+                <input type="file" id="produtos" name="fotosProdutos[]" onchange="addImagem();" size="60" multiple>
                 </label>
-                <input type="file" class="logo">
                 <span class="help-block">Envie todas de uma só vez.</span>
-                <p class="IMGsucesso" id="mostraImagens"></p>
+                <p class="IMGsucesso" id="mostraProdutos"></p>
             </div>
         </div>
         <div class="col-md-6 paddingTop2">

@@ -1,6 +1,6 @@
 var produtos = [];
 var descricao = [];
-var fotos = [];
+var produtos = [];
 
 function addProdutos() {
 
@@ -48,9 +48,6 @@ function removeDescricao(){
 
 function addImagem(){
 
-    boxvalue = document.getElementById('fotos').value;
-    fotos.push(boxvalue);
-    console.log(fotos);
-    document.getElementById('mostraImagens').innerHTML = 'Fotos enviadas com sucesso!';
+    document.getElementById('mostraProdutos').innerHTML = 'produtos enviadas com sucesso!';
 
 }

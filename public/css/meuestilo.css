@@ -68,6 +68,7 @@
 
 .subparabens{
   text-align:center;
+  padding-bottom:5%;
 }
 
 .comecar{
@@ -86,4 +87,8 @@
   transition:0.4s;
   background-color:#454E59;
   color:#d3d3d3;
+}
+
+.center{
+  text-align:center;
 }

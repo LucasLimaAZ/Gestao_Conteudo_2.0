@@ -93,14 +93,10 @@ input[type="file"] {
 }
 
 th{
-    border-style:solid;
-    border-width: 2px;
     padding:3%;
 }
 
 td{
-    border-style:solid;
-    border-width: 2px;
     padding:3%;
 }
 
@@ -129,4 +125,15 @@ td{
 
 .interrogacao{
     cursor:pointer;
+}
+
+.center{
+    text-align:center;
+}
+
+.tabela{
+    background-color:#F9F9F9;
+    border-top:none;
+    border-left:none;
+    border-right:none;
 }

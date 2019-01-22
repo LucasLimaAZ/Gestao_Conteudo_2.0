@@ -1,46 +1,27 @@
-<script>
-    	function TeclaBloq(Campo,teclapres){
-var tecla = teclapres.keyCode;
-
-if (tecla == 39)
-
-{
-
-window.alert("não é permitido o caracter");
-
-Campo.focus();
-
-return false;
-
-}
-
-return tecla;
-
-}
-</script>
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop marginBottom5 paddingAll">
-    <form action="tela4.php" method="post">
+    <form action="tela4.php" method="post" enctype="multipart/form-data">
         <div class="col-md-6">
             <label for="titulo">Título: </label>
-            <input class="form-control" type="text" name="titulo" >
+            <input class="form-control" type="text" maxlength="200" name="titulo" >
         </div>
         <div class="col-md-6">
             <label for="subtitulo">Subtítulo: </label>
-            <input class="form-control" type="text" name="subtitulo" >
+            <input class="form-control" type="text" maxlength="200" name="subtitulo" >
         </div>
         <div class="col-md-6 paddingTop2">
             <label for="tags">Palavras Chave: </label>
-            <input class="form-control" type="text" name="tags" placeholder="Ex: Empresa, carro, roupa, hospital.">
+            <input class="form-control" type="text" name="tags" maxlength="200" placeholder="Ex: Empresa, carro, roupa, hospital.">
         </div>
         <div class="col-md-6 paddingTop2">
             <label for="descricao">Descrição: </label>
-            <input type="text" class="form-control" placeholder="Nos dê uma breve descrição do seu site." name="descricao">
+            <input type="text" class="form-control" maxlength="200" placeholder="Nos dê uma breve descrição do seu site." name="descricao">
         </div>
         <div class="col-md-6 paddingTop2">
             <label class="col-md-4 paddingTop7">Envie sua logo: </label>
             <label class="logo col-md-8"> <img src="public/img/upload.png" style="icon">
-            <input type="file" id="File"   size="60" >
+            <input type="file" onchange="addLogo();" id="logo" name="logo" size="60" >
             </label> 
+            <p class="IMGsucesso" id="mostraLogo"></p>
         </div>
         <div class="col-md-6 paddingTop2">
             <div class="col-md-4">
@@ -66,9 +47,9 @@ return tecla;
         <div class="col-md-6">
             <label class="col-md-4 paddingTop7">Envie fotos: </label>
             <label class="logo col-md-8"> <img src="public/img/upload.png" style="icon">
-            <input type="file" id="File"   size="60" >
+            <input type="file" id="fotos" name="fotos[]" onchange="addFotos();" size="60" multiple>
             </label>
-            <input type="file" class="logo">
+            <p class="IMGsucesso" id="mostraFotos"></p>
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-4 paddingTop2">

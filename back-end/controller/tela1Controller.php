@@ -16,4 +16,16 @@ $novo_necessidades = implode(",", $necessidades);
 
 $query->insertInto('conteudo','`nome`, `cpf`, `necessidades`',"'$nome','$cpf','$novo_necessidades'");
 
+$dir = "private/clientes/$nome/";
+$dir2 = "private/clientes/$nome/fotos/";
+$dir3 = "private/clientes/$nome/produtos/";
+
+if(is_dir($dir)){
+    echo "O cliente $nome já possui cadastro, caso ainda não tenha se cadastrdo procure o suporte.";
+}else{
+    mkdir($dir, 0777);
+    mkdir($dir2, 0777);
+    mkdir($dir3, 0777);
+}
+
 ?>

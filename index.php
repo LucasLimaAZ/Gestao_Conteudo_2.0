@@ -36,13 +36,20 @@
             </h2>
         </div>
     </section>
-    <div class="col-lg-2"></div>
-    <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop marginBottom5 paddingAll">
-        <h2 class="parabens"><strong>Parabéns por adquirir um site DISITE!</strong></h2><h4 class="subparabens">Agora seja bem vindo ao nosso sistema de gerenciamento de conteúdo!<h4>
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <a href="tela1.php"><button class="comecar">COMEÇAR!</button></a>
-            </div>
+    <div class="col-md-2"></div>
+    <section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
+        <div class="col-md-12">
+            <h2 class="parabens"><strong>Parabéns por adquirir um site DISITE!</strong></h2><h4 class="subparabens">Agora seja bem vindo ao nosso sistema de gerenciamento de conteúdo!<h4>
+        </div>
+        <div class="col-md-4 center">
+            <img src="public/img/template.png" width="150px">
+        </div>
+        <div class="col-md-4 center">
+            <a href="tela1.php"><button class="comecar"><i class="fa fa-fw fa-play"></i><div class="fa">Começar</div></button></a>
+        </div>
+        <div class="col-md-4 center">
+            <img src="public/img/mobile.png" width="150px">
+        </div>
     </section>
 </body>
 </html>

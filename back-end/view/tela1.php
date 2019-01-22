@@ -3,12 +3,12 @@
         <div class="form-group">
             <label class="col-md-1 control-label" for="nome">Nome</label>
             <div class="col-md-11">
-                <input type="text" id="nome" name="nome" class="form-control" required>
+                <input type="text" maxlength="200" id="nome" name="nome" class="form-control" required>
             <span class="help-block">Por favor digite seu nome completo.</span>
             </div>
             <label class="col-md-1 control-label" for="cpf">CPF / CNPJ</label>
             <div class="col-md-11">
-                <input type="text" id="cpf" name="cpf" class="form-control" required>
+                <input type="text" id="cpfcnpj" name="cpf" class="form-control cpfOuCnpj" required>
             <span class="help-block">Por favor digite seu cpf ou cnpj.</span><br>
             </div>
             <label class="col-md-4 control-label paddingTop">Necessidades:</label>
