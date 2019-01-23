@@ -56,7 +56,9 @@
 		</div>
 			<div class="escolha">
 				<form action="tela3.php" method="post">
-					<div class="col-md-4"></div>
+					<div class="col-md-4">
+					<button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
+					</div>
 					<div class="col-md-4">
 						<input hidden="hidden" name="modeloEscolhido" value="" id="escolha" required>
 						<label id="modeloEscolhido" class="selectModelos">Escolha</label>

@@ -21,7 +21,8 @@ $dir2 = "private/clientes/$nome/fotos/";
 $dir3 = "private/clientes/$nome/produtos/";
 
 if(is_dir($dir)){
-    echo "O cliente $nome já possui cadastro, caso ainda não tenha se cadastrdo procure o suporte.";
+    ?><script>alert("Um cliente com o seu nome já possui cadastro, caso ainda não tenha se cadastrdo procure o suporte.");</script><?php
+    die();
 }else{
     mkdir($dir, 0777);
     mkdir($dir2, 0777);

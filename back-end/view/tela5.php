@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop paddingAll">
+<section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop paddingAll">
     <div class="col-md-12 site-heading h3 tituloProdutos">
         <i class="fa fa-fw fa-shopping-cart"></i> <strong>Produtos / Serviços</strong>
     </div>
@@ -21,14 +21,24 @@
                 <p id="mostraDescricao"></p>
             </div>
         </div>
+        <script type="text/javascript">
+            var i;
+            var nomes;
+            $(document).ready(function(){
+                $('input[type="file"]').change(function(e){
+                    var tamanho = e.target.files.length;
+                    document.getElementById('mostraNomesProdutos').innerHTML = (tamanho + ' arquivos enviados.')
+                });
+            });
+        </script>
         <div class="col-md-12" style="margin-top:2%">
             <div class="col-md-6">
                 <label class="col-md-4 paddingTop7">Envie fotos dos produtos: </label>
                 <label class="logo col-md-8"> <img src="public/img/upload.png" style="icon">
-                <input type="file" id="produtos" name="fotosProdutos[]" onchange="addImagem();" size="60" multiple>
+                <input type="file" id="produtosFotos" name="fotosProdutos[]" onchange="addImagem();fotosNome();" size="60" multiple>
                 </label>
-                <span class="help-block">Envie todas de uma só vez.</span>
-                <p class="IMGsucesso" id="mostraProdutos"></p>
+                <span class="help-block red">Envie todas de uma só vez.</span>
+                <p class="IMGsucesso" id="mostraNomesProdutos"></p>
             </div>
         </div>
         <div class="col-md-6 paddingTop2">
@@ -40,7 +50,14 @@
         <div class="col-md-6">
             <input type="hidden" name="produtos" id="produtos">
             <input type="hidden" name="descricoes" id="descricoes">
-            <input type="submit" class="form-control botaoProximo" value="Próximo">
+        </div>
+        <div class="col-md-12 paddingTop2">
+            <div class="col-md-6">
+                <button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
+            </div>
+            <div class="col-md-6">
+                <input type="submit" class="form-control botaoProximo" value="Próximo">
+            </div>
         </div>
     </form>
 </section>

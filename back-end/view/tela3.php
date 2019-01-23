@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop marginBottom5 paddingAll">
+<section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
     <form action="tela4.php" method="post" enctype="multipart/form-data">
         <div class="col-md-6">
             <label for="titulo">Título: </label>
@@ -51,8 +51,12 @@
             </label>
             <p class="IMGsucesso" id="mostraFotos"></p>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-4 paddingTop2">
-            <input type="submit" value="Próximo"  class="form-control botaoProximo">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
+            </div>
+            <div class="col-md-6">
+                <input type="submit" value="Próximo"  class="form-control botaoProximo">
+            </div>
         </div>
 </section>

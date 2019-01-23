@@ -65,7 +65,7 @@
 		</div>
 			<div class="escolha">
 				<div class="col-md-4">
-					<input type="button" onclick="alert('Trabalho em progresso... Favor escolher um dos slides!')" href="clienteUpload.php" class="btn jaPossuo marginBottom" value="Já possuo imagens">
+					<button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
 				</div>
 				<div class="col-md-4">
 					<input type="hidden" name="slider" value="" id="escolha">
