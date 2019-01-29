@@ -1,5 +1,5 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop marginBottom5 paddingAll">
-    <div class="col-lg-12">
+<section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
+    <div class="col-md-12">
         <form action="telaFinal.php" method="post">
             <?php
                 foreach($resultado as $campo){
@@ -52,11 +52,11 @@
                 </div>
             </div>
             
-            <div class="col-lg-4 paddingTop2">
+            <div class="col-md-4 paddingTop2">
                 <button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
             </div>
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4 paddingTop2">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 paddingTop2">
             <input type="submit" class="form-control botaoProximo" value="Finalizar">
             </div>
             <?php

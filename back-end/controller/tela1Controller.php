@@ -25,9 +25,7 @@ $dir2 = "private/clientes/$nome/fotos/";
 $dir3 = "private/clientes/$nome/produtos/";
 
 if(is_dir($dir)){
-    ?><script>alert("Um cliente com o seu nome já possui cadastro, caso ainda não tenha se cadastrdo procure o suporte.");</script><?php
-    ?>
-    <script>
+    ?><script>alert("Um cliente com o seu nome já possui cadastro, caso ainda não tenha se cadastrdo procure o suporte.");
     window.history.back();
     </script>
     <?php
