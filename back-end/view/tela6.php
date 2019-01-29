@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop marginBottom5 paddingAll">
+<section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
     <form action="telaRevisao.php" method="post">
         <div class="col-md-12 site-heading h3 tituloProdutos">
             <i class="fa fa-fw fa-calendar"></i> <strong>Contato: </strong>
@@ -68,6 +68,9 @@
             <i class="fa fa-fw fa-youtube"></i>
             <label for="youtube">Youtube: </label>
             <input type="text" maxlength="200" name="youtube" id="youtube" class="form-control">
+        </div>
+        <div class="col-md-4 paddingTop2">
+            <button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-4 paddingTop2">

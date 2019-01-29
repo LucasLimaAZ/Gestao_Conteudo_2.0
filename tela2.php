@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="tema/css/themes.css">
     <link rel="stylesheet" href="public/css/style.css">
     <script src="tema/js/vendor/modernizr-3.3.1.min.js"></script>
-    <title>DISITE - Um Produto DOM</title>
+    <title>Facilita</title>
 </head>
 <body>
     <section class="site-content site-section-mini themed-background-muted border-bottom">
@@ -30,7 +30,7 @@
                     <i class="fa fa-fw fa-chevron-right"></i> <strong>Passo 2 - Escolha o seu modelo...</strong>
                 </div>
                 <div class="col-md-2">
-                    <a href="http://dom.com.vc/"><img src="public/img/disite_logo.png" width="125px"></a>
+                    <a href="https://dom.com.vc/"><img src="public/img/disite_logo.png" width="125px"></a>
                 </div>
             </h2>
         </div>

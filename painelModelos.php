@@ -10,11 +10,37 @@
     <link rel="stylesheet" href="public/css/stylePainel.css">
     <link rel="stylesheet" href="public/css/meuestilo.css">
     <title>Painel de Cadastros DOM</title>
+    <?php
+    include 'back-end/core/database/Conexao.php';
+    include 'back-end/core/database/QueryBuilder.php';
+    include 'back-end/config/QueryConfig.php';
+    
+    if(isset($_POST["titulo"])){
+        $titulo = $_POST["titulo"];
+        $categoria = $_POST["categoria"];
+        $link = $_POST["link"];
+        $imagem = $_FILES['imagem'];
+        $path = $_FILES['imagem']['name'];
+        $local_imagem = "public/img/modelos/";
+        $extensao = pathinfo($path, PATHINFO_EXTENSION);
+        $imagem_name = $titulo;
+        $caminho = $titulo.'.'.$extensao;
+        $upload = move_uploaded_file($_FILES['imagem']['tmp_name'],$local_imagem.$imagem_name.'.'.$extensao);
+        
+        if($upload){
+            echo 'SUCESSO!';
+        }else{
+            echo 'ERRO!';
+        }
+        
+        $query->insertIntoModelos($titulo,$categoria,$caminho,$link);
+    }
+    ?>
 </head>
 <body>
 <div class="painelModelos">
     <div class="container">  
-        <form id="contact" action="back-end/controller/painelModelosController.php" method="post" enctype="multipart/form-data">
+        <form id="contact" action="painelModelos.php" method="post" enctype="multipart/form-data">
             <h3>PAINEL DISITE</h3>
             <h4>Um produto <a href="http://dom.com.vc/">DOM</a></h4>
                 <fieldset>
@@ -23,11 +49,26 @@
                 <fieldset>
                     <label for="categoria">Categoria: </label>
                     <select name="categoria">
-                        <option value="com">Lojas / Comércio</option>
+                        <option value="com">Lojas/Comércio</option>
                         <option value="super">Supermercado</option>
                         <option value="carro">Revenda de Carros</option>
                         <option value="con">Contabilidade</option>
-                        <option value="med">Clínica / Odonto</option>
+                        <option value="med">Clínica/Odonto</option>
+                        <option value="adv">Advogado</option>
+                        <option value="arq">Arquitetura</option>
+                        <option value="gastro">Gastronomia</option>
+                        <option value="beleza">Estética</option>
+                        <option value="vest">Loja de Roupas</option>
+                        <option value="acad">Academia</option>
+                        <option value="band">Música</option>
+                        <option value="imob">Corretores</option>
+                        <option value="escola">Escolas</option>
+                        <option value="ong">ONG/Religioso</option>
+                        <option value="business">Business</option>
+                        <option value="ind">Indústria</option>
+                        <option value="pet">Petshop/Veterinário</option>
+                        <option value="lon">Loja Online</option>
+                        <option value="tec">Assistência Técnica</option>
                     </select>
                 </fieldset>
                 <fieldset>

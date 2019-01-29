@@ -1,6 +1,6 @@
 <?php
 
-include '../core/database/Conexao.php';
+/*include '../core/database/Conexao.php';
 include '../core/database/QueryBuilder.php';
 include '../config/QueryConfig.php';
 

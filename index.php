@@ -39,7 +39,7 @@
     <div class="col-md-2"></div>
     <section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
         <div class="col-md-12">
-            <h2 class="parabens"><strong>Parabéns por adquirir um site DISITE!</strong></h2><h4 class="subparabens">Agora seja bem vindo ao nosso sistema de gerenciamento de conteúdo!<h4>
+            <h2 class="parabens"><strong>Parabéns por adquirir um site Facilita!</strong></h2><h4 class="subparabens">Agora seja bem vindo ao nosso sistema de gerenciamento de conteúdo!<h4>
         </div>
         <div class="col-md-4 center">
             <img src="public/img/template.png" width="150px">

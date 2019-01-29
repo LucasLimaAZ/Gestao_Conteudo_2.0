@@ -28,12 +28,27 @@
 <body>
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop paddingAll">
     <ul id="filters" class="clearfix">
-        <li><span class="filter active" data-filter=".com, .super, .carro, .con, .med">Todos</span></li>
-        <li><span class="filter" data-filter=".com">Lojas / Comércio</span></li>
+        <li><span class="filter active" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
+        <li><span class="filter" data-filter=".com">Lojas/Comércio</span></li>
         <li><span class="filter" data-filter=".super">Supermercado</span></li>
-        <li><span class="filter" data-filter=".carro">Revenda de Carros</span></li>
+        <li><span class="filter" data-filter=".carro">Carros</span></li>
         <li><span class="filter" data-filter=".con">Contabilidade</span></li>
-        <li><span class="filter" data-filter=".med">Clínicas Médicas / Odonto</span></li>
+        <li><span class="filter" data-filter=".med">Clínicas</span></li>
+        <li><span class="filter" data-filter=".adv">Advogado</span></li>
+        <li><span class="filter" data-filter=".arq">Arquitetura</span></li>
+        <li><span class="filter" data-filter=".gastro">Gastronomia</span></li>
+        <li><span class="filter" data-filter=".beleza">Estética</span></li>
+        <li><span class="filter" data-filter=".vest">Loja de Roupas</span></li>
+        <li><span class="filter" data-filter=".acad">Academia</span></li>
+        <li><span class="filter" data-filter=".band">Música</span></li>
+        <li><span class="filter" data-filter=".imob">Corretores</span></li>
+        <li><span class="filter" data-filter=".escola">Escolas</span></li>
+        <li><span class="filter" data-filter=".ong">ONG/Religioso</span></li>
+        <li><span class="filter" data-filter=".business">Business</span></li>
+        <li><span class="filter" data-filter=".ind">Indústria</span></li>
+        <li><span class="filter" data-filter=".pet">Petshop/Veterinário</span></li>
+        <li><span class="filter" data-filter=".lon">Loja Online</span></li>
+        <li><span class="filter" data-filter=".tec">Assistência Técnica</span></li>
     </ul>
     <div id="portfoliolist">
 		<div class="modelos"><?php
@@ -41,10 +56,10 @@
                 <div class="portfolio <?=$modelo->categoria?>" data-cat="<?=$modelo->categoria?>">
                 <a id="<?=$modelo->titulo?>" onclick="pegaId(this);escolhe();">
 					<div class="portfolio-wrapper">
-						<img src="public/img/modelos/<?=$modelo->titulo?>" alt="" />
+						<img src="public/img/modelos/<?=$modelo->caminho?>" alt="" />
 						<div class="label">
 							<div class="label-text">
-							    <b><a href="<?=$modelo->link?>">VER<br></a></b>
+							    <b><a href="<?=$modelo->link?>" target='_blank'>VER<br></a></b>
 								<?=$modelo->titulo?>
 								<span class="text-category"><?=$modelo->categoria?></span>
 							</div>
@@ -56,7 +71,9 @@
 		</div>
 			<div class="escolha">
 				<form action="tela3.php" method="post">
-					<div class="col-md-4"></div>
+					<div class="col-md-4">
+					<button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
+					</div>
 					<div class="col-md-4">
 						<input hidden="hidden" name="modeloEscolhido" value="" id="escolha" required>
 						<label id="modeloEscolhido" class="selectModelos">Escolha</label>

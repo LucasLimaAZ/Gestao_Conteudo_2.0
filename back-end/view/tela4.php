@@ -27,14 +27,29 @@
 </head>
 <body>
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop paddingAll">
-    <ul id="filters" class="clearfix">
-        <li><span class="filter active" data-filter=".com, .super, .carro, .con, .med">Todos</span></li>
-        <li><span class="filter" data-filter=".com">Lojas / Comércio</span></li>
+	<ul id="filters" class="clearfix">
+        <li><span class="filter active" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .imob, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
+        <li><span class="filter" data-filter=".com">Lojas/Comércio</span></li>
         <li><span class="filter" data-filter=".super">Supermercado</span></li>
-        <li><span class="filter" data-filter=".carro">Revenda de Carros</span></li>
+        <li><span class="filter" data-filter=".carro">Carros</span></li>
         <li><span class="filter" data-filter=".con">Contabilidade</span></li>
-        <li><span class="filter" data-filter=".med">Clínicas Médicas / Odonto</span></li>
-	</ul>
+        <li><span class="filter" data-filter=".med">Clínicas</span></li>
+        <li><span class="filter" data-filter=".adv">Advogado</span></li>
+        <li><span class="filter" data-filter=".arq">Arquitetura</span></li>
+        <li><span class="filter" data-filter=".gastro">Gastronomia</span></li>
+        <li><span class="filter" data-filter=".beleza">Estética</span></li>
+        <li><span class="filter" data-filter=".vest">Loja de Roupas</span></li>
+        <li><span class="filter" data-filter=".acad">Academia</span></li>
+        <li><span class="filter" data-filter=".band">Música</span></li>
+        <li><span class="filter" data-filter=".imob">Corretores</span></li>
+        <li><span class="filter" data-filter=".escola">Escolas</span></li>
+        <li><span class="filter" data-filter=".ong">ONG/Religioso</span></li>
+        <li><span class="filter" data-filter=".business">Business</span></li>
+        <li><span class="filter" data-filter=".ind">Indústria</span></li>
+        <li><span class="filter" data-filter=".pet">Petshop/Veterinário</span></li>
+        <li><span class="filter" data-filter=".lon">Loja Online</span></li>
+        <li><span class="filter" data-filter=".tec">Assistência Técnica</span></li>
+    </ul>
 	<form action="tela5.php" method="post">
 		<div class="col-md-6 marginVertical">
 			<label for="slogan">Slogan / Título:</label>
@@ -51,7 +66,7 @@
                 <div class="portfolio <?=$slide->categoria?>" data-cat="<?=$slide->categoria?>">
                 <a id="<?=$slide->titulo?>" onclick="pegaId(this);escolhe();">
 					<div class="portfolio-wrapper">
-						<img src="public/img/slides/<?=$slide->titulo?>" alt="" />
+						<img src="http://facilita.dom.com.vc/public/img/slides/<?=$slide->caminho?>" alt="" />
 						<div class="label">
 							<div class="label-text">
 							    <b><?=$slide->titulo?></b>
@@ -65,7 +80,7 @@
 		</div>
 			<div class="escolha">
 				<div class="col-md-4">
-					<input type="button" onclick="alert('Trabalho em progresso... Favor escolher um dos slides!')" href="clienteUpload.php" class="btn jaPossuo marginBottom" value="Já possuo imagens">
+					<button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
 				</div>
 				<div class="col-md-4">
 					<input type="hidden" name="slider" value="" id="escolha">

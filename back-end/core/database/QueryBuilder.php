@@ -149,18 +149,18 @@ class QueryBuilder{
 
     }
 
-    public function insertIntoModelos($titulo,$categoria,$link){
+    public function insertIntoModelos($titulo,$caminho,$categoria,$link){
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $inserir = $this->pdo->prepare("INSERT INTO `modelos`(`titulo`, `categoria`, `link`) VALUES ('$titulo','$categoria', '$link')");
+        $inserir = $this->pdo->prepare("INSERT INTO `modelos`(`titulo`, `caminho`, `categoria`, `link`) VALUES ('$titulo','$caminho','$categoria', '$link')");
         $inserir->execute();
 
     }
 
-    public function insertIntoSlides($titulo,$categoria){
+    public function insertIntoSlides($titulo,$categoria,$caminho){
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $inserir = $this->pdo->prepare("INSERT INTO `slides`(`titulo`, `categoria`) VALUES ('$titulo','$categoria')");
+        $inserir = $this->pdo->prepare("INSERT INTO `slides`(`titulo`, `categoria`, `caminho`) VALUES ('$titulo','$categoria','$caminho')");
         $inserir->execute();
 
     }

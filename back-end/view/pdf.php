@@ -58,6 +58,9 @@
         <td class="paddingTop2">Informações: <?=$campo->informacoes?></td>    
     </tr>
     <tr>
+        <td class="paddingTop2">Slide: <?=$campo->slider?></td>    
+    </tr>
+    <tr>
         <td class="paddingTop2">Slogan(Título Slide): <?=$campo->slogan?></td>
     </tr>
     <tr>

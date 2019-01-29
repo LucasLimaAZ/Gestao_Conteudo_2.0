@@ -14,6 +14,7 @@
     <link rel="apple-touch-icon" href="tema/img/icon144.png" sizes="144x144">
     <link rel="apple-touch-icon" href="tema/img/icon152.png" sizes="152x152">
     <link rel="apple-touch-icon" href="tema/img/icon180.png" sizes="180x180">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="tema/css/bootstrap.min.css">
     <link rel="stylesheet" href="tema/css/plugins.css">
     <link rel="stylesheet" href="tema/css/main.css">

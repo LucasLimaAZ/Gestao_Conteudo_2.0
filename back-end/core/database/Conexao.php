@@ -2,11 +2,16 @@
 
 class Conexao{
 
-    public static function Conectar(){
+    public static function Conectar($config){
 
         try{
 
-            return new PDO('mysql:host=localhost;dbname=gestaoconteudo','root','');
+            return new PDO(
+                $config['connection'].';dbname='.$config['name'],
+                $config['username'],
+                $config['password'],
+                $config['options']
+            );
 
         }
         catch(PDOException $e){
