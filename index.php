@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="public/css/meuestilo.css">
     <script src="tema/js/vendor/modernizr-3.3.1.min.js"></script>
     <title>DISITE - Um Produto DOM</title>
+    <?php
+    include 'back-end/core/database/Router.php';
+    $router = new Router;
+    require 'back-end/config/routes.php';
+    $uri = trim($_SERVER['REQUEST_URI'],'/');
+    var_dump(trim($_SERVER['REQUEST_URI'],'/'));
+    $router->direct($uri);
+    ?>
 </head>
 <body>
     <section class="site-content site-section-mini themed-background-muted border-bottom">

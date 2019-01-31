@@ -18,6 +18,8 @@ class Router{
             
         }
 
+        throw new Exception('Rota inválida!');
+
     }
 
 }
