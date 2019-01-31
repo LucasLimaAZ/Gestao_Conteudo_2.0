@@ -42,6 +42,7 @@
     include 'back-end/core/database/QueryBuilder.php';
     include 'back-end/config/QueryConfig.php';
     include 'back-end/controller/telaFinalController.php';
+    include 'back-end/controller/emailController.php';
     include 'back-end/view/telaFinal.php';
     ?>
 </body>
