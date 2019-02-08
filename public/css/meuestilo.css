@@ -44,6 +44,15 @@
   overflow-y: auto;
 }
 
+.verModelos{
+  width:100%;
+  background-color:#fff;
+  overflow:hidden;
+  height:100%;
+  border:1px solid #ccc;
+  overflow-y: auto;
+}
+
 .menu{
   padding:2%;
   text-align:center;
