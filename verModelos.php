@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="public/css/normalize.css">
 	<link rel="stylesheet" href="public/css/layout.css">
 	<link rel="stylesheet" href="public/css/meuestilo.css">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="public/js/jquery.mixitup.min.js"></script>
 	<script src="public/js/modelos.js"></script>
 	<?php
@@ -27,7 +27,7 @@
 <body>
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-12  ">
     <ul id="filters" class="clearfix">
-        <li><span class="filter active" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
+        <li><span class="active filter" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
         <li><span class="filter" data-filter=".com">Lojas/Comércio</span></li>
         <li><span class="filter" data-filter=".super">Supermercado</span></li>
         <li><span class="filter" data-filter=".carro">Carros</span></li>
