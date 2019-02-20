@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Facilita DISITE</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width,  initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="tema/css/bootstrap.min.css">
     <link rel="stylesheet" href="tema/css/plugins.css">
     <link rel="stylesheet" href="tema/css/main.css">
@@ -25,30 +25,46 @@
 	?>
 </head>
 <body>
-<section class="site-content site-section-mini themed-background-muted border-bottom col-lg-12  ">
-    <ul id="filters" class="clearfix">
-        <li><span class="active filter" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
-        <li><span class="filter" data-filter=".com">Lojas/Comércio</span></li>
-        <li><span class="filter" data-filter=".super">Supermercado</span></li>
-        <li><span class="filter" data-filter=".carro">Carros</span></li>
-        <li><span class="filter" data-filter=".con">Contabilidade</span></li>
-        <li><span class="filter" data-filter=".med">Clínicas</span></li>
-        <li><span class="filter" data-filter=".adv">Advogado</span></li>
-        <li><span class="filter" data-filter=".arq">Arquitetura</span></li>
-        <li><span class="filter" data-filter=".gastro">Gastronomia</span></li>
-        <li><span class="filter" data-filter=".beleza">Estética</span></li>
-        <li><span class="filter" data-filter=".vest">Loja de Roupas</span></li>
-        <li><span class="filter" data-filter=".acad">Academia</span></li>
-        <li><span class="filter" data-filter=".band">Música</span></li>
-        <li><span class="filter" data-filter=".imob">Corretores</span></li>
-        <li><span class="filter" data-filter=".escola">Escolas</span></li>
-        <li><span class="filter" data-filter=".ong">ONG/Religioso</span></li>
-        <li><span class="filter" data-filter=".business">Business</span></li>
-        <li><span class="filter" data-filter=".ind">Indústria</span></li>
-        <li><span class="filter" data-filter=".pet">Petshop/Veterinário</span></li>
-        <li><span class="filter" data-filter=".lon">Loja Online</span></li>
-        <li><span class="filter" data-filter=".tec">Assistência Técnica</span></li>
-    </ul>
+<section class="modelosCanvas">
+    <div class="headerMenu col-md-12">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <ul id="filters" class="clearfix">
+                <li class="itemFiltro"><span class="active filter" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".com, .super, .vest, .carro, .lon">Varejo</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".gastro, .beleza, .band, .pet, .tec">Serviços</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".con, .business">Serviços Financeiros</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".med, .acad">Saúde</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter="">Manufatura</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter="">Logística</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".adv">Jurídico</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".imob">Hospitalidade</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".escola">Educacional</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".ong">Distribuição</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter=".arq, .ind">Construção e Projetos</span></li>
+                <li class="itemFiltro"><span class="filter" data-filter="">Agronegócio</span></li>
+
+                <!--<li><span class="filter" data-filter="">Supermercado</span></li>
+                <li><span class="filter" data-filter="">Carros</span></li>
+                <li><span class="filter" data-filter="">Contabilidade</span></li>
+                <li><span class="filter" data-filter="">Clínicas</span></li>
+                <li><span class="filter" data-filter="">Advogado</span></li>
+                <li><span class="filter" data-filter="">Arquitetura</span></li>
+                <li><span class="filter" data-filter="">Gastronomia</span></li>
+                <li><span class="filter" data-filter="">Estética</span></li>
+                <li><span class="filter" data-filter="">Academia</span></li>
+                <li><span class="filter" data-filter="">Música</span></li>
+                <li><span class="filter" data-filter="">Corretores</span></li>
+                <li><span class="filter" data-filter="">Escolas</span></li>
+                <li><span class="filter" data-filter="">ONG/Religioso</span></li>
+                <li><span class="filter" data-filter="">Business</span></li>
+                <li><span class="filter" data-filter="">Indústria</span></li>
+                <li><span class="filter" data-filter="">Petshop/Veterinário</span></li>
+                <li><span class="filter" data-filter="">Loja Online</span></li>
+                <li><span class="filter" data-filter="">Assistência Técnica</span></li>-->
+            </ul>
+        </div>
+    </div>
     <div id="portfoliolist">
 		<div class="verModelos"><?php
 			foreach($resultado as $modelo):?>

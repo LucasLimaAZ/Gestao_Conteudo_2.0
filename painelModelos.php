@@ -43,43 +43,43 @@
         <form id="contact" action="painelModelos.php" method="post" enctype="multipart/form-data">
             <h3>PAINEL DISITE</h3>
             <h4>Um produto <a href="http://dom.com.vc/">DOM</a></h4>
-                <fieldset>
-                    <input placeholder="Título" type="text" tabindex="1" required autofocus name="titulo">
-                </fieldset>
-                <fieldset>
-                    <label for="categoria">Categoria: </label>
-                    <select name="categoria">
-                        <option value="com">Lojas/Comércio</option>
-                        <option value="super">Supermercado</option>
-                        <option value="carro">Revenda de Carros</option>
-                        <option value="con">Contabilidade</option>
-                        <option value="med">Clínica/Odonto</option>
-                        <option value="adv">Advogado</option>
-                        <option value="arq">Arquitetura</option>
-                        <option value="gastro">Gastronomia</option>
-                        <option value="beleza">Estética</option>
-                        <option value="vest">Loja de Roupas</option>
-                        <option value="acad">Academia</option>
-                        <option value="band">Música</option>
-                        <option value="imob">Corretores</option>
-                        <option value="escola">Escolas</option>
-                        <option value="ong">ONG/Religioso</option>
-                        <option value="business">Business</option>
-                        <option value="ind">Indústria</option>
-                        <option value="pet">Petshop/Veterinário</option>
-                        <option value="lon">Loja Online</option>
-                        <option value="tec">Assistência Técnica</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Link para a demonstração" type="text" tabindex="3" required name="link">
-                </fieldset>
-                <fieldset>
-                    <input type="file" name="imagem">
-                </fieldset>
-                <fieldset>
-                    <input name="submit" type="submit" id="contact-submit" data-submit="...Enviando" class="btn">
-                </fieldset>
+            <fieldset>
+                <input placeholder="Título" type="text" tabindex="1" required autofocus name="titulo">
+            </fieldset>
+            <fieldset>
+                <label for="categoria">Categoria: </label>
+                <select name="categoria">
+                    <option value="com">Lojas/Comércio</option>
+                    <option value="super">Supermercado</option>
+                    <option value="carro">Revenda de Carros</option>
+                    <option value="con">Contabilidade</option>
+                    <option value="med">Clínica/Odonto</option>
+                    <option value="adv">Advogado</option>
+                    <option value="arq">Arquitetura</option>
+                    <option value="gastro">Gastronomia</option>
+                    <option value="beleza">Estética</option>
+                    <option value="vest">Loja de Roupas</option>
+                    <option value="acad">Academia</option>
+                    <option value="band">Música</option>
+                    <option value="imob">Corretores</option>
+                    <option value="escola">Escolas</option>
+                    <option value="ong">ONG/Religioso</option>
+                    <option value="business">Business</option>
+                    <option value="ind">Indústria</option>
+                    <option value="pet">Petshop/Veterinário</option>
+                    <option value="lon">Loja Online</option>
+                    <option value="tec">Assistência Técnica</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Link para a demonstração" type="text" tabindex="3" required name="link">
+            </fieldset>
+            <fieldset>
+                <input type="file" name="imagem">
+            </fieldset>
+            <fieldset>
+                <input name="submit" type="submit" id="contact-submit" data-submit="...Enviando" class="btn">
+            </fieldset>
         </form>
     </div>
 </div>
