@@ -24,6 +24,21 @@ class QueryBuilder{
 
     }
 
+    public function selectPendentes($table){
+
+        $selecionaTodos = $this->pdo->prepare("SELECT * FROM {$table} WHERE `status` = 'pendente'");
+        $selecionaTodos->execute();
+        return $selecionaTodos->fetchAll(PDO::FETCH_CLASS);
+
+    }
+
+    public function selectFinalizados($table){
+
+        $selecionaTodos = $this->pdo->prepare("SELECT * FROM {$table} WHERE `status` = 'finalizado'");
+        $selecionaTodos->execute();
+        return $selecionaTodos->fetchAll(PDO::FETCH_CLASS);
+
+    }
 
     public function insertInto($table,$campos,$values){
 
