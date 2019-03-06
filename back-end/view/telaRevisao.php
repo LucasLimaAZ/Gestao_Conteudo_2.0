@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
+<section class="site-content site-section-mini themed-background-muted col-md-8 marginTop marginBottom5 paddingAll">
     <div class="col-md-12">
         <form action="telaFinal.php" method="post">
             <?php

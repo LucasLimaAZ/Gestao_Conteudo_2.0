@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
+<section class="site-content site-section-mini themed-background-muted col-md-8 marginTop marginBottom5 paddingAll">
     <form action="tela4.php" method="post" enctype="multipart/form-data">
         <div class="col-md-6">
             <label for="titulo">Título: </label>

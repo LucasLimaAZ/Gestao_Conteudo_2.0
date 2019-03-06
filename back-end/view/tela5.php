@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop paddingAll">
+<section class="site-content site-section-mini themed-background-muted col-md-8 marginTop paddingAll">
     <div class="col-md-12 site-heading h3 tituloProdutos">
         <i class="fa fa-fw fa-shopping-cart"></i> <strong>Produtos / Serviços</strong>
     </div>

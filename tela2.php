@@ -23,13 +23,13 @@
     <title>Facilita</title>
 </head>
 <body>
-    <section class="site-content site-section-mini themed-background-muted border-bottom">
+    <section class="site-content site-section-mini col-xs-12 themed-background-muted border-bottom">
         <div class="container">
             <h2 class="site-heading h3 site-block">
-                <div class="col-md-10">
+                <div class="col-lg-10">
                     <i class="fa fa-fw fa-chevron-right"></i> <strong>Passo 2 - Escolha o seu modelo...</strong>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2">
                     <a href="https://dom.com.vc/"><img src="public/img/disite_logo.png" width="125px"></a>
                 </div>
             </h2>

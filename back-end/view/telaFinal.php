@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop marginBottom5 paddingAll">
+<section class="site-content site-section-mini themed-background-muted col-lg-8 marginTop marginBottom5 paddingAll">
 <div class="col-md-4"></div>
         <div class="col-md-4">
             <img src="public/img/disite_logo.png">

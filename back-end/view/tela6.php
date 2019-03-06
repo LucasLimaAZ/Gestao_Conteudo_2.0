@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
+<section class="site-content site-section-mini themed-background-muted col-md-8 marginTop marginBottom5 paddingAll">
     <form action="telaRevisao.php" method="post">
         <div class="col-md-12 site-heading h3 tituloProdutos">
             <i class="fa fa-fw fa-calendar"></i> <strong>Contato: </strong>

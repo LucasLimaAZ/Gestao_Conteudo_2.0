@@ -1,4 +1,4 @@
-<section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop paddingAll">
+<section class="site-content site-section-mini themed-background-muted col-lg-8 marginTop paddingAll">
     <form action="tela2.php" method="post">
         <div class="form-group">
             <label class="col-md-1 control-label" for="nome">Nome</label>

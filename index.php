@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="tema/css/main.css">
     <link rel="stylesheet" href="tema/css/themes.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/layout.css">
     <link rel="stylesheet" href="public/css/meuestilo.css">
     <script src="tema/js/vendor/modernizr-3.3.1.min.js"></script>
     <title>DISITE - Um Produto DOM</title>
@@ -36,7 +37,7 @@
         <div class="container">
             <h2 class="site-heading h3 site-block">
                 <div class="col-md-10">
-                    <i class="fa fa-fw fa-chevron-right"></i> <strong>SEJA BEM VINDO - SISTEMA DE GERENCIAMENTO DE CONTEÚDO</strong>
+                    <i class="fa fa-fw fa-chevron-right"></i> <strong>SEJA BEM VINDO - SISTEMA FACILITA</strong>
                 </div>
                 <div class="col-md-2">
                     <a href="http://dom.com.vc/"><img src="public/img/disite_logo.png" width="125px"></a>
@@ -45,7 +46,7 @@
         </div>
     </section>
     <div class="col-md-2"></div>
-    <section class="site-content site-section-mini themed-background-muted border-bottom col-md-8 marginTop marginBottom5 paddingAll">
+    <section class="site-content site-section-mini themed-background-muted col-md-8 marginTop marginBottom5 paddingAll">
         <div class="col-md-12">
             <h2 class="parabens"><strong>Parabéns por adquirir um site Facilita!</strong></h2><h4 class="subparabens">Agora seja bem vindo ao nosso sistema de gerenciamento de conteúdo!<h4>
         </div>

@@ -26,7 +26,7 @@
 	?>
 </head>
 <body>
-<section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop paddingAll">
+<section class="site-content site-section-mini themed-background-muted col-lg-8 marginTop paddingAll">
 	<ul id="filters" class="clearfix">
         <li><span class="filter active" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .imob, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
         <li><span class="filter" data-filter=".com">Lojas/Comércio</span></li>
