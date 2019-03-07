@@ -26,7 +26,7 @@
 </head>
 <body>
 <section class="site-content site-section-mini themed-background-muted col-lg-8 marginTop paddingAll">
-	<div class="col-xs-2">
+	<div class="col-md-2">
 		<div class="filtroDesktop">
 			<ul id="filters" class="clearfix">
 				<li class="itemFiltro"><span class="filter active" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
@@ -93,7 +93,7 @@
 		}
 		</script>
 	</div>
-	<div class="col-lg-10 col-xs-12">
+	<div class="col-md-10 ">
 		<div id="portfoliolist">
 			<div class="modelos"><?php
 				foreach($resultado as $modelo):?>
