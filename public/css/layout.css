@@ -131,7 +131,6 @@ body {
 	}
 
 		.portfolio .label-bg {
-			/*background-color: #D9383D;*/
 			width: 100%;
 			height:20px;
 			position: absolute;
@@ -159,6 +158,10 @@ body {
     top:-30px;
   }  
 
+.voceEscolheu{
+	font-size:18px;
+	font-weight: bold;
+}
 	
 
 

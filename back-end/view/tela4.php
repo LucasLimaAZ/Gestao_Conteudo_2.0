@@ -27,39 +27,76 @@
 </head>
 <body>
 <section class="site-content site-section-mini themed-background-muted col-lg-8 marginTop paddingAll">
-	<ul id="filters" class="clearfix">
-        <li><span class="filter active" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .imob, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
-        <li><span class="filter" data-filter=".com">Lojas/Comércio</span></li>
-        <li><span class="filter" data-filter=".super">Supermercado</span></li>
-        <li><span class="filter" data-filter=".carro">Carros</span></li>
-        <li><span class="filter" data-filter=".con">Contabilidade</span></li>
-        <li><span class="filter" data-filter=".med">Clínicas</span></li>
-        <li><span class="filter" data-filter=".adv">Advogado</span></li>
-        <li><span class="filter" data-filter=".arq">Arquitetura</span></li>
-        <li><span class="filter" data-filter=".gastro">Gastronomia</span></li>
-        <li><span class="filter" data-filter=".beleza">Estética</span></li>
-        <li><span class="filter" data-filter=".vest">Loja de Roupas</span></li>
-        <li><span class="filter" data-filter=".acad">Academia</span></li>
-        <li><span class="filter" data-filter=".band">Música</span></li>
-        <li><span class="filter" data-filter=".imob">Corretores</span></li>
-        <li><span class="filter" data-filter=".escola">Escolas</span></li>
-        <li><span class="filter" data-filter=".ong">ONG/Religioso</span></li>
-        <li><span class="filter" data-filter=".business">Business</span></li>
-        <li><span class="filter" data-filter=".ind">Indústria</span></li>
-        <li><span class="filter" data-filter=".pet">Petshop/Veterinário</span></li>
-        <li><span class="filter" data-filter=".lon">Loja Online</span></li>
-        <li><span class="filter" data-filter=".tec">Assistência Técnica</span></li>
-    </ul>
+<div class="col-md-2">
+		<div class="filtroDesktop">
+			<ul id="filters" class="clearfix">
+				<li class="itemFiltro"><span class="filter active" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".com">Lojas/Comércio</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".super">Supermercado</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".carro">Carros</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".con">Contabilidade</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".med">Clínicas</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".adv">Advogado</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".arq">Arquitetura</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".gastro">Gastronomia</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".beleza">Estética</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".vest">Loja de Roupas</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".acad">Academia</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".band">Música</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".imob">Corretores</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".escola">Escolas</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".ong">ONG/Religioso</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".business">Business</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".ind">Indústria</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".pet">Petshop/Veterinário</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".lon">Loja Online</span></li>
+				<li class="itemFiltro"><span class="filter" data-filter=".tec">Assistência Técnica</span></li>
+			</ul>
+		</div>
+	</div>
+	<div class="categoriasSideBar">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul id="filters" class="clearfix">
+			<li class="itemFiltro"><span class="filter active" data-filter=".com, .super, .carro, .con, .med, .adv, .arq, .gastro, .beleza, .vest, .acad, .band, .escola, .ong, .business, .ind, .pet, .lon, .tec">Todos</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".com">Lojas/Comércio</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".super">Supermercado</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".carro">Carros</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".con">Contabilidade</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".med">Clínicas</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".adv">Advogado</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".arq">Arquitetura</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".gastro">Gastronomia</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".beleza">Estética</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".vest">Loja de Roupas</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".acad">Academia</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".band">Música</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".imob">Corretores</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".escola">Escolas</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".ong">ONG/Religioso</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".business">Business</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".ind">Indústria</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".pet">Petshop/Veterinário</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".lon">Loja Online</span></li>
+			<li class="itemFiltro"><span class="filter" data-filter=".tec">Assistência Técnica</span></li>
+		</ul>
+		</div>
+
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Categorias</span>
+
+		<script>
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "200px";
+		}
+
+		function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+	</div>
 	<form action="tela5.php" method="post">
-		<div class="col-md-6 marginVertical">
-			<label for="slogan">Slogan / Título:</label>
-			<input type="text" name="slogan" class="form-control " placeholder="Digite um slogan/título para seu slider..." maxlength="200">
-		</div>
-		<div class="col-md-6 marginVertical">
-			<label for="subslogan">Subtítulo:</label>
-			<input type="text" name="subslogan" class="form-control " placeholder="Digite um subtítulo para seu slider..." maxlength="200">
-		</div>
-		<div class="col-md-5"></div>
+		
+		<div class="col-md-10">
    		<div id="portfoliolist">
 		<div class="modelos"><?php
 			foreach($resultado as $slide):?>
@@ -78,6 +115,14 @@
             </div>
 		<?php endforeach;?>
 		</div>
+		<div class="col-md-6 marginVertical">
+			<label for="slogan">Slogan / Título:</label>
+			<input type="text" name="slogan" class="form-control " placeholder="Digite um slogan/título para seu slider..." maxlength="200">
+		</div>
+		<div class="col-md-6 marginVertical">
+			<label for="subslogan">Subtítulo:</label>
+			<input type="text" name="subslogan" class="form-control " placeholder="Digite um subtítulo para seu slider..." maxlength="200">
+		</div>
 			<div class="escolha">
 				<div class="col-md-4">
 					<button type="button" onclick="window.history.back();" class="form-control botaoProximo" value="Voltar">Voltar</button>
@@ -90,7 +135,8 @@
 					<input type="submit" class="form-control botaoProximo" value="Próximo">
 				</div>
 				</form>	
-			</div>				
+			</div>		
+</div>		
 		</div>
 	</div>
 </section>

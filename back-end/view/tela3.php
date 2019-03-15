@@ -2,19 +2,19 @@
     <form action="tela4.php" method="post" enctype="multipart/form-data">
         <div class="col-md-6">
             <label for="titulo">Título: </label>
-            <input class="form-control" type="text" onkeyPress="return TeclaBloq(this,event);" maxlength="200" name="titulo" >
+            <input class="form-control" type="text"  maxlength="200" name="titulo" >
         </div>
         <div class="col-md-6">
             <label for="subtitulo">Subtítulo: </label>
-            <input class="form-control" type="text" onkeyPress="return TeclaBloq(this,event);" maxlength="200" name="subtitulo" >
+            <input class="form-control" type="text"  maxlength="200" name="subtitulo" >
         </div>
         <div class="col-md-6 paddingTop2">
             <label for="tags">Palavras Chave: </label>
-            <input class="form-control" type="text" name="tags" onkeyPress="return TeclaBloq(this,event);" maxlength="200" placeholder="Ex: Empresa, carro, roupa, hospital.">
+            <input class="form-control" type="text" name="tags"  maxlength="200" placeholder="Ex: Empresa, carro, roupa, hospital.">
         </div>
         <div class="col-md-6 paddingTop2">
             <label for="descricao">Descrição: </label>
-            <input type="text" class="form-control" onkeyPress="return TeclaBloq(this,event);" maxlength="200" placeholder="Nos dê uma breve descrição do seu site." name="descricao">
+            <input type="text" class="form-control"  maxlength="200" placeholder="Nos dê uma breve descrição do seu site." name="descricao">
         </div>
         <div class="col-md-6 paddingTop2">
             <label class="col-md-4 paddingTop7">Envie sua logo: </label>
@@ -39,10 +39,10 @@
         </div>
         <div class="col-md-12 paddingTop2"><span style="text-align:center;" class="help-block">Informações sobre o seu negócio...</span></div>
         <div class="col-md-6 paddingTop2">
-            <textarea class="form-control" rows="5"  onkeyPress="return TeclaBloq(this,event);" name="sobre" placeholder="Conte-nos sobre a sua empresa..."></textarea>
+            <textarea class="form-control" rows="5"   name="sobre" placeholder="Conte-nos sobre a sua empresa..."></textarea>
         </div>
         <div class="col-md-6 paddingTop2">  
-            <textarea class="form-control" rows="5"  onkeyPress="return TeclaBloq(this,event);" name="informacoes" placeholder="Informações importantes..."></textarea>
+            <textarea class="form-control" rows="5"   name="informacoes" placeholder="Informações importantes..."></textarea>
         </div>
         <div class="col-md-6">
             <label class="col-md-4 paddingTop7">Envie fotos: </label>

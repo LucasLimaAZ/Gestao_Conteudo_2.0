@@ -60,17 +60,27 @@ class QueryBuilder{
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $inserir = $this->pdo->prepare("UPDATE $table SET 
-        `titulo` = '$titulo',
-        `subtitulo` = '$subtitulo',
-        `tags` = '$tags',
-        `descricao` = '$descricao',
-        `cor1` = '$cor1',
-        `cor2` = '$cor2',
-        `cor3` = '$cor3',
-        `sobre` = '$sobre',
-        `informacoes` = '$informacoes'
+        `titulo` = :titulo,
+        `subtitulo` = :subtitulo,
+        `tags` = :tags,
+        `descricao` = :descricao,
+        `cor1` = :cor1,
+        `cor2` = :cor2,
+        `cor3` = :cor3,
+        `sobre` = :sobre,
+        `informacoes` = :informacoes
         WHERE `id` = $id");
-        $inserir->execute();
+        $inserir->execute(array(
+        ':titulo' => $titulo, 
+        ':subtitulo' => $subtitulo, 
+        ':tags' => $tags, 
+        ':descricao' => $descricao,
+        ':cor1' => $cor1,
+        ':cor2' => $cor2,
+        ':cor3' => $cor3,
+        ':sobre' => $sobre,
+        ':informacoes' => $informacoes
+        ));
 
     }
 
@@ -78,11 +88,15 @@ class QueryBuilder{
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $inserir = $this->pdo->prepare("UPDATE $table SET 
-        `slogan` = '$slogan',
-        `subslogan` = '$subslogan',
-        `slider` = '$slider'
+        `slogan` = :slogan,
+        `subslogan` = :subslogan,
+        `slider` = :slider
         WHERE `id` = $id");
-        $inserir->execute();
+        $inserir->execute(array(
+            ':slogan' => $slogan,
+            ':subslogan' => $subslogan,
+            ':slider' => $slider
+        ));
 
     }
 
@@ -90,10 +104,13 @@ class QueryBuilder{
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $inserir = $this->pdo->prepare("UPDATE $table SET 
-        `produtos` = '$produtos',
-        `descricoes` = '$descricoes'
+        `produtos` = :produtos,
+        `descricoes` = :descricoes
         WHERE `id` = $id");
-        $inserir->execute();
+        $inserir->execute(array(
+            ':produtos' => $produtos,
+            ':descricoes' => $descricoes
+        ));
 
     }
 
@@ -101,20 +118,33 @@ class QueryBuilder{
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $inserir = $this->pdo->prepare("UPDATE $table SET 
-        `telefone` = '$telefone',
-        `email` = '$email',
-        `whatsapp` = '$whatsapp',
-        `email1` = '$email1',
-        `email2` = '$email2',
-        `email3` = '$email3',
-        `facebook` = '$facebook',
-        `instagram` = '$instagram',
-        `twitter` = '$twitter',
-        `linkedin` = '$linkedin',
-        `googleplus` = '$googleplus',
-        `youtube` = '$youtube'
+        `telefone` = :telefone,
+        `email` = :email,
+        `whatsapp` = :whatsapp,
+        `email1` = :email1,
+        `email2` = :email2,
+        `email3` = :email3,
+        `facebook` = :facebook,
+        `instagram` = :instagram,
+        `twitter` = :twitter,
+        `linkedin` = :linkedin,
+        `googleplus` = :googleplus,
+        `youtube` = :youtube
         WHERE `id` = $id");
-        $inserir->execute();
+        $inserir->execute(array(
+            ':telefone' => $telefone,
+            ':email' => $email,
+            ':whatsapp' => $whatsapp,
+            ':email1' => $email1,
+            ':email2' => $email2,
+            ':email3' => $email3,
+            ':facebook' => $facebook,
+            ':instagram' => $instagram,
+            ':twitter' => $twitter,
+            ':linkedin' => $linkedin,
+            ':googleplus' => $googleplus,
+            ':youtube' => $youtube
+        ));
 
     }
 
@@ -122,37 +152,67 @@ class QueryBuilder{
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $inserir = $this->pdo->prepare("UPDATE `conteudo` SET 
-        `nome` = '$nome',
-        `cpf` = '$cpf',
-        `necessidades` = '$necessidades',
-        `modelo_escolhido` = '$modelo_escolhido',
-        `titulo` = '$titulo',
-        `subtitulo` = '$subtitulo',
-        `tags` = '$tags',
-        `descricao` = '$descricao',
-        `cor1` = '$cor1',
-        `cor2` = '$cor2',
-        `cor3` = '$cor3',
-        `sobre` = '$sobre',
-        `informacoes` = '$informacoes',
-        `slogan` = '$slogan',
-        `subslogan` = '$subslogan',
-        `produtos` = '$produtos',
-        `descricoes` = '$descricoes',
-        `telefone` = '$telefone',
-        `email` = '$email',
-        `whatsapp` = '$whatsapp',
-        `email1` = '$email1',
-        `email2` = '$email2',
-        `email3` = '$email3',
-        `facebook` = '$facebook',
-        `instagram` = '$instagram',
-        `twitter` = '$twitter',
-        `linkedin` = '$linkedin',
-        `googleplus` = '$googleplus',
-        `youtube` = '$youtube'
+        `nome` = :nome,
+        `cpf` = :cpf,
+        `necessidades` = :necessidades,
+        `modelo_escolhido` = :modelo_escolhido,
+        `titulo` = :titulo,
+        `subtitulo` = :subtitulo,
+        `tags` = :tags,
+        `descricao` = :descricao,
+        `cor1` = :cor1,
+        `cor2` = :cor2,
+        `cor3` = :cor3,
+        `sobre` = :sobre,
+        `informacoes` = :informacoes,
+        `slogan` = :slogan,
+        `subslogan` = :subslogan,
+        `produtos` = :produtos,
+        `descricoes` = :descricoes,
+        `telefone` = :telefone,
+        `email` = :email,
+        `whatsapp` = :whatsapp,
+        `email1` = :email1,
+        `email2` = :email2,
+        `email3` = :email3,
+        `facebook` = :facebook,
+        `instagram` = :instagram,
+        `twitter` = :twitter,
+        `linkedin` = :linkedin,
+        `googleplus` = :googleplus,
+        `youtube` = :youtube
         WHERE `id` = $id");
-        $inserir->execute();
+        $inserir->execute(array(
+            ':nome' => $nome,
+            ':cpf' => $cpf,
+            ':necessidades' => $necessidades,
+            ':modelo_escolhido' => $modelo_escolhido,
+            ':titulo' => $titulo, 
+            ':subtitulo' => $subtitulo, 
+            ':tags' => $tags, 
+            ':descricao' => $descricao,
+            ':cor1' => $cor1,
+            ':cor2' => $cor2,
+            ':cor3' => $cor3,
+            ':sobre' => $sobre,
+            ':informacoes' => $informacoes,
+            ':slogan' => $slogan,
+            ':subslogan' => $subslogan,
+            ':produtos' => $produtos,
+            ':descricoes' => $descricoes,
+            ':telefone' => $telefone,
+            ':email' => $email,
+            ':whatsapp' => $whatsapp,
+            ':email1' => $email1,
+            ':email2' => $email2,
+            ':email3' => $email3,
+            ':facebook' => $facebook,
+            ':instagram' => $instagram,
+            ':twitter' => $twitter,
+            ':linkedin' => $linkedin,
+            ':googleplus' => $googleplus,
+            ':youtube' => $youtube)
+        );
 
     }
 

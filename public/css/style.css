@@ -19,8 +19,20 @@
     padding-top:2%;
 }
 
+.paddingTop1{
+    padding-top:0px;
+}
+
+.paddingBottom5{
+    padding-bottom:5%;
+}
+
 .marginTop{
     margin-top:3%;
+}
+
+.marginTop5{
+    margin-top:5%;
 }
 
 .marginBottom{

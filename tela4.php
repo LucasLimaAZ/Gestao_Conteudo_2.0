@@ -23,7 +23,7 @@
     <title>DISITE - Um Produto DOM</title>
 </head>
 <body>
-    <section class="site-content site-section-mini themed-background-muted border-bottom">
+    <section class="site-content site-section-mini col-xs-12 themed-background-muted border-bottom">
         <div class="container">
             <h2 class="site-heading h3 site-block">
                 <div class="col-md-10">

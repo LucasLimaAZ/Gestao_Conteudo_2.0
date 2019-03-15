@@ -20,7 +20,7 @@
 		include 'back-end/core/database/Conexao.php';
 		include 'back-end/core/database/QueryBuilder.php';
 		include 'back-end/config/QueryConfig.php';
-		//include 'back-end/controller/tela1Controller.php';
+		include 'back-end/controller/tela1Controller.php';
 		include 'back-end/controller/modelosController.php';
 	?>
 </head>
@@ -119,7 +119,7 @@
 						</div>
 						<div class="col-lg-4">
 							<input hidden="hidden" name="modeloEscolhido" value="" id="escolha" required>
-							<label id="modeloEscolhido" class="selectModelos">Escolha</label>
+							<p class="voceEscolheu">Você escolheu: <label id="modeloEscolhido" class="selectModelos">Selecione</label></p>
 						</div>
 						<div class="col-lg-4">
 							<input type="submit" class="form-control botaoProximo" value="Próximo">
