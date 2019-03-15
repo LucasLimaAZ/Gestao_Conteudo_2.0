@@ -92,7 +92,7 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Serão substituídas por reais!</a>
+                  <a class="dropdown-item" href="#">Notas de Atualização<br>- Painel novo<br>- Correção de bugs<br>- Adição de Imagens ao PDF<br>- Novo layout Branco</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -207,6 +207,7 @@
               </div>
             </div>
           </div>
+          <!-- GRÁFICOS
           <div class="row">
             <div class="col-md-4">
               <div class="card card-chart">
@@ -258,6 +259,7 @@
               </div>
             </div>
           </div>
+                  -->
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <div class="card">
@@ -423,8 +425,8 @@
             <div class="col-lg-6 col-md-12">
               <div class="card">
                 <div class="card-header card-header-warning">
-                  <h4 class="card-title">Employees Stats</h4>
-                  <p class="card-category">New employees on 15th September, 2016</p>
+                  <h4 class="card-title">EM BREVE</h4>
+                  <p class="card-category">Esta funcionalidade será adicionada!</p>
                 </div>
                 <div class="card-body table-responsive">
                   <table class="table table-hover">
