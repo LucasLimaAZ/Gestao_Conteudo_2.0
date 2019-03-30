@@ -1,3 +1,7 @@
+<?php 
+    require 'partials/head.php';
+    require 'partials/sidebar.html'; 
+?>
 <section class="site-content site-section-mini themed-background-muted border-bottom col-lg-8 marginTop paddingAll">
     <form action="pdf.php" method="post">
         <div class="col-md-6">

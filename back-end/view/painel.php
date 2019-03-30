@@ -1,76 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="tema/painel/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="tema/painel/assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Painel - FACILITA
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <link href="tema/painel/assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
-  <link href="tema/painel/assets/demo/demo.css" rel="stylesheet" />
-  <?php
-    include 'back-end/core/database/Conexao.php';
-    include 'back-end/core/database/QueryBuilder.php';
-    include 'back-end/config/QueryConfig.php';
-    include 'back-end/controller/painelController.php';
-  ?>
-</head>
-
+<?php
+  require 'partials/head.php';
+?>
 <body class="">
 <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="tema/painel/assets/img/sidebar-1.jpg">
-      <div class="logo">
-        <a href="https://facilita.dom.com.vc/" class="simple-text logo-normal">
-          FACILITA
-        </a>
-      </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="painel.php">
-              <i class="material-icons">dashboard</i>
-              <p>Painel</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">
-              <i class="material-icons">person</i>
-              <p>Clientes</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="selecionaCliente.php">
-              <i class="material-icons">content_paste</i>
-              <p>Ver Conteúdos</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="painelModelos.php">
-              <i class="material-icons">library_books</i>
-              <p>Modelos</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="painelSlides.php">
-              <i class="material-icons">bubble_chart</i>
-              <p>Imagens - Slider</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">
-              <i class="material-icons">notifications</i>
-              <p>Notificações</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <?php require 'partials/sidebar.html'; ?>
     <div class="main-panel">
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">

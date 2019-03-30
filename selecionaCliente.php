@@ -24,7 +24,8 @@
     <title>DISITE - Um Produto DOM</title>
 </head>
 <body>
-    <section class="site-content site-section-mini themed-background-muted border-bottom">
+    <div class="col-md-2"></div>
+    <section class="site-content col-md-10 site-section-mini themed-background-muted border-bottom">
         <div class="container">
             <h2 class="site-heading h3 site-block">
                 <div class="col-md-10">
@@ -42,7 +43,7 @@
         include 'back-end/core/database/QueryBuilder.php';
         include 'back-end/config/QueryConfig.php';
         include 'back-end/controller/selecionaClienteController.php';
-        include 'back-end/view/selecionaCliente.php';
+        include 'back-end/view/selecionaClienteNEW.php';
     ?>
 </body>
 </html>
